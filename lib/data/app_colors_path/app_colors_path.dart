@@ -4,4 +4,7 @@ class AppColorsPath {
   /// example
   static const Color primary = Color(0xFF1976D2);
   static const Color backgorund = Color(0xB0D8D8D8);
+  static const Color white = Colors.white;
+  static const Color grey = Colors.grey;
+  static const Color blue = Colors.blue;
 }
