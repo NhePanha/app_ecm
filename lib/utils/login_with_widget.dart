@@ -2,8 +2,10 @@ import 'package:ecm/data/app_colors_path/app_colors_path.dart';
 import 'package:flutter/material.dart';
 
 class login_with_widget extends StatefulWidget {
+  final Function() onClick;
   const login_with_widget({
     super.key,
+    required this.onClick,
   });
 
   @override

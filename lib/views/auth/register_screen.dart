@@ -4,14 +4,13 @@ import 'package:ecm/utils/login_with_widget.dart';
 import 'package:ecm/views/auth/widget/custom_buttom_widget.dart';
 import 'package:ecm/views/auth/widget/login_widget.dart';
 import 'package:ecm/views/auth/widget/sign_up_widget.dart';
+import 'package:ecm/views/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
-
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();
 }
-
 class _RegisterScreenState extends State<RegisterScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -91,6 +90,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       onClick: () {
                         if (ischeck) {
                           log("event sign in");
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
                         } else {
                           log("event sign up");
                         }
@@ -104,7 +104,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       children: [Text("Login With")],
                     ),
                   ),
-                  login_with_widget(),
+                  login_with_widget(
+                    onClick: (){},
+                  ),
                 ],
               ),
             ),
