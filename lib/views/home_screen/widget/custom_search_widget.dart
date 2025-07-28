@@ -34,5 +34,4 @@ class CustomSearchWidget extends StatelessWidget{
       ),
     );
   }
-
 }
