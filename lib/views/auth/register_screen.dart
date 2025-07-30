@@ -24,12 +24,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
           SizedBox(
             width: double.infinity,
             height: double.infinity,
-            child: Image(
-              image: NetworkImage(
-                "https://i.pinimg.com/736x/94/66/ea/9466eaba2f6a49b3b462ce693489c8b8.jpg",
-              ),
-              fit: BoxFit.cover,
-            ),
           ),
           Positioned(
             child: Center(

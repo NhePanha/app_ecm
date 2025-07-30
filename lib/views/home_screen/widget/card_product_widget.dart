@@ -14,8 +14,9 @@ class CardProductWidget extends StatelessWidget {
     return InkWell(
       onTap: onClick,
       child: Container(
+        // padding: EdgeInsets.all(1),
         decoration: BoxDecoration(
-          color: AppColorsPath.backgorund,
+          color: AppColorsPath.white,
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
@@ -30,7 +31,7 @@ class CardProductWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 130,
+              height: 160,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
